@@ -4,24 +4,25 @@
 // mult - умножение
 // div - деление
 
-function setValue(value) {
-    return a = value;;
+
+let newValue;
+
+function setValue(defaultValue) {
+    return  newValue = defaultValue;
 };
 
-function add(b) {
-    return (a += b);
+function add(value) {
+    return (newValue += value);
 }
-function sub(b) {
-    return (a -= b);
+function sub(value) {
+    return (newValue -= value);
 }
-function mult(b) {
-    return (a *= b);
+function mult(value) {
+    return (newValue *= value);
 }
-function div(b) {
-    return (a /= b);
+function div(value) {
+    return (newValue /= value);
 }
-
-
 
 module.exports = {
     add,
@@ -29,4 +30,5 @@ module.exports = {
     mult,
     div,
     setValue,
+    newValue,
 };
